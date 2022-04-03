@@ -1,0 +1,17 @@
+server:
+  port: 1010
+
+spring:
+  application:
+    name: ALLSTORE
+  datasource:
+    url: jdbc:mysql://localhost:3306/allstore_db?useSSL=false&serverTimezone=Asia/Baku
+    username: root
+    password: 1511
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      - hibernate:
+          - format_sql: true
